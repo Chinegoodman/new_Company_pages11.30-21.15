@@ -1,0 +1,432 @@
+html{
+    font-size: 100px;
+}
+/*头部样式*/
+#top_content{
+    /*height:0.6rem;*/
+    height:1.2rem;
+    position: relative;
+    background-color: #121212;
+}
+#top_logo{
+    position: absolute;
+    left:0.37rem;
+    /*top:0.31rem;*/
+    top:0.25rem;
+}
+#top_logo img:first-child{
+    /*width:1.43rem;
+    height:0.32rem;*/
+    /* width:1rem;
+     height:0.58rem;
+     float: left;
+     margin-top: 0.06rem;
+     margin-right: 0.25rem;*/
+    width:1.03rem;
+    height:0.64rem;
+    float: left;
+    margin-top: 0.06rem;
+    margin-right: 0.25rem;
+}
+/*LOGO样式*/
+#top_logo .logo_tmgc{
+    width:0.66rem;
+    height:0.7rem;
+    float: left;
+}
+/*LOGO样式结束*/
+
+#top_navs{
+    position: absolute;
+    right:0;
+    top:1.2rem;
+    overflow: hidden;
+    display: none;
+    width:100%;
+    z-index: 100;
+}
+#top_navs li{
+    width:92.54%;
+    padding-left: 7.46%;
+    height:0.78rem;
+    line-height: 0.78rem;
+    background-color: #121212;
+    color: #fff;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+}
+#top_navs li a{
+    color: #fff;
+    display: block;
+    font-size: 0.24rem;
+    height:0.78rem;
+    line-height: 0.78rem;
+}
+#top_navs li a img{
+    float: right;
+    margin-top: 0.255rem;
+    margin-right: 0.35rem;
+    width:0.16rem;
+    height:0.27rem;
+}
+#top_menu{
+    position: absolute;
+    right:0.36rem;
+    top:0.44rem;
+    /*top:0.24rem;*/
+    width:0.46rem;
+    height:0.33rem;
+}
+#top_menu img{
+    width:100%;
+    height:100%;
+}
+
+/*头部结束*/
+/*底部样式*/
+#bottom{
+    background-color: #121212;
+    width:100%;
+    /* height:4.76rem;*/
+}
+#bottom_content{
+    /*height:3.24rem;*/
+    padding-top: 0.54rem;
+    padding-left: 0.57rem;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+#bottom_tmgz{
+    /*height:1.04rem;
+    margin-bottom: 0.73rem;*/
+    margin-bottom: 0.46rem;
+}
+#bottom_tmgz_logo{
+    /*width:0.55rem;
+    !*width:1.54rem;*!
+    height:0.32rem;
+    margin-bottom: 0.47rem;*/
+    /*width:1rem;
+    height:0.58rem;
+    !*margin-bottom: 0.3rem;*!
+    float: left;
+    margin-right: 0.25rem;
+    margin-top: 0.06rem;*/
+    width:1.03rem;
+    height:0.64rem;
+    float: left;
+    margin-right: 0.25rem;
+    margin-top: 0.06rem;
+}
+/*LOGO样式*/
+#bottom_tmgz .logo_tmgc{
+    width:0.66rem;
+    height:0.7rem;
+    float: left;
+}
+.bottom_tmgz_abouts p:first-child{
+    padding-top: 1.01rem;
+}
+/*LOGO样式结束*/
+.bottom_tmgz_abouts{
+
+}
+.bottom_tmgz_abouts p{
+    /*font-size: 0.24rem;
+    line-height:0.33rem;*/
+    color: rgba(255,255,255,0.85);
+    font-size: 0.22rem;
+    line-height:0.30rem;
+}
+
+/*#bottom_tmgz_abouts{
+    overflow: hidden;
+}
+#bottom_tmgz_abouts li{
+    float: left;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    border-right: 0.02rem solid rgba(255,255,255,0.75);
+}
+#bottom_tmgz_abouts li:last-child{
+    border-right: none;
+}
+#bottom_tmgz_abouts li:first-child{
+    padding-left: 0;
+}
+#bottom_tmgz_abouts li a{
+    color: rgba(255,255,255,0.85);
+    font-size: 0.18rem;
+    line-height: 0.25rem;
+}*/
+
+
+#connect_us{
+    overflow: hidden;
+}
+/*.bottom_xlwb,.bottom_wx{
+    float: left;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.14rem;
+    line-height: 0.2rem;
+    text-align: center;
+    width:0.8rem;
+    !*height:1.04rem;*!
+    padding-bottom: 3px;
+}
+.bottom_xlwb img,.bottom_wx img{
+    width:0.8rem;
+    height:0.8rem;
+    margin-bottom: 3px;
+}
+.bottom_xlwb span,.bottom_wx span{
+    width:0.70rem;
+    height:0.2rem;
+    margin:0 auto;
+}*/
+.bottom_xlwb{
+    float: left;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.24rem;
+    line-height: 0.33rem;
+    text-align: center;
+    width:1.38rem;
+    padding-bottom: 3px;
+}
+.bottom_xlwb img{
+    width:1.38rem;
+    height:1.105rem;
+    margin-bottom: 0.13rem;
+}
+.bottom_xlwb span{
+    width:1.38rem;
+    font-size: 0.24rem;
+    line-height: 0.33rem;
+    margin:0 auto;
+}
+
+.bottom_wx{
+    float: left;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.24rem;
+    line-height: 0.33rem;
+    text-align: center;
+    width:1.3rem;
+    padding-bottom: 3px;
+}
+.bottom_wx img{
+    width:1.3rem;
+    height:1.3rem;
+    margin-bottom: 3px;
+}
+.bottom_wx span{
+    width:1.30rem;
+    font-size: 0.24rem;
+    line-height: 0.33rem;
+    margin:0 auto;
+}
+
+
+.bottom_wx{
+    margin-left: 0.5rem;
+}
+#bottom_others{
+    /*width:66.67%;*/
+    margin:0 auto;
+    /*padding-top: 0.25rem;*/
+    padding:0.3rem 0 0.32rem;
+    color: rgba(255,255,255,0.85);
+    overflow: hidden;
+    /*border-top: 1px solid rgba(255,255,255,0.3);*/
+    text-align: center;
+}
+#bottom_others span:first-child{
+    margin-bottom: 3px;
+}
+#bottom_others span{
+    display: block;
+    font-size: 0.22rem;
+}
+/*底部结束*/
+/*公共样式结束*/
+/*///////////////////////////*/
+/*独有的样式*/
+/*#top_navs li:nth-child(4){
+    border-bottom:2px solid #CD1C12;
+}
+#top_navs li:nth-child(4) a{
+    color: #CD1C12;
+}*/
+body{
+    position: relative;
+}
+.close_video_btn{
+    position: absolute;
+    left:20px;
+    top:20px;
+    padding:10px;
+    /*background:url("../images/关闭btn.png") no-repeat;*/
+    /*background-size: 100% 100%;*/
+}
+.close_video_btn>img{
+    display: block;
+    width:20px;
+    height:20px;
+}
+.video_show_bg video{
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+/*响应式存在的需要隐藏的元素*/
+.content_li_pic_special_words4{
+    display: none;
+}
+.content_li_pic1_special_words{
+    display: none;
+}
+/*上面的即为响应式存在的需要隐藏的元素*/
+
+
+/*内容样式开始*/
+#content{
+    width:100%;
+    /*margin-bottom: 0.5rem;*/
+}
+.content_top{
+    width:100%;
+    height:2.19rem;
+    background:#ccc url("../images/appdownload_top.png");
+    background-size: auto 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.62rem;
+}
+.transparentpg_topbg{
+    position: absolute;
+    /*top:0.395rem;
+    width:1.985rem;
+    height:1.338rem;*/
+    left:0.861rem;
+    top:0.871rem;
+    width:2.12rem;
+    height:auto;
+}
+.content_others{
+    width:100%;
+}
+
+.APP_down{
+    display: block;
+    width:2rem;
+    height:2rem;
+    margin:0 auto 0.19rem;
+}
+
+.transparent_download{
+    width:4.2rem;
+    /*height:2.85rem;*/
+    margin:0 auto 1rem;
+    overflow: hidden;
+}
+.ios_down,.anzhuo_down{
+    float: left;
+    width:2rem;
+    /*height:2.85rem;*/
+}
+.ios_down{
+    margin-right: 0.2rem;
+}
+.ios_down>img,.anzhuo_down>img{
+    width:2rem;
+    height:2rem;
+    margin-bottom: 0.19rem;
+}
+.ios_down>div,.anzhuo_down>div{
+    /*width:1.96rem;
+    height:0.62rem;
+    border:0.02rem solid #CF3A32;*/
+    width:2rem;
+    height:0.66rem;
+    overflow: hidden;
+
+}
+.ios_down>div{
+    background: url("../images/IOStip.png") no-repeat;
+    background-size: 100% 100%;
+}
+.anzhuo_down>div{
+    background: url("../images/安卓tip.png") no-repeat;
+    background-size: 100% 100%;
+}
+/*.ios_down>div>img,.ios_down>div>span,.anzhuo_down>div>img,.anzhuo_down>div>span{
+    float: left;
+    line-height: 0.62rem;
+    font-size: 0.2rem;
+    color: #CF3A32;
+}
+.ios_down>div>img,.anzhuo_down>div>img{
+    width:0.39rem;
+    height:0.39rem;
+    margin:0.12rem 0.1rem 0 0.27rem;
+}*/
+#transparent_show{
+    width:100%;
+}
+#transparent_show>p{
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    color: #CD1C12;
+    margin-bottom: 0.18rem;
+    margin-left: 0.2rem;
+    height:0.5rem;
+    font-weight: bold;
+}
+#transparent_show>p>span{
+    display: block;
+    width:2px;
+    height:0.32rem;
+    background-color: #D0021B;
+    margin-top: 0.09rem;
+    float: left;
+    margin-right: 0.17rem;
+}
+#transparent_show>span{
+    font-size: 0.26rem;
+    line-height: 0.42rem;
+    color: #4A4A4A;
+    display: block;
+    /*margin-bottom: 0.12rem;
+    margin-left: 0.2rem;*/
+    width:7.1rem;
+    margin:0 auto 0.56rem;
+}
+
+#APP_about_videos{
+    width:100%;
+    overflow: hidden;
+}
+#APP_about_videos>li{
+    padding-top: 1.258rem;
+    height:2.992rem;
+    background: url("../images/appload_video.png") no-repeat;
+    background-size: auto 100%;
+}
+#APP_about_videos>li:nth-child(2){
+    background: url("../images/appload_video2.png") no-repeat;
+    background-size: auto 100%;
+}
+#APP_about_videos>li>div{
+    width:100%;
+}
+#APP_about_videos>li>div img{
+    display: block;
+    width:1.49rem;
+    height:1.49rem;
+    margin:0 auto 0.38rem;
+}
+#APP_about_videos>li>div  p{
+    font-size: 0.24rem;
+    line-height: 0.34rem;
+    text-align: center;
+    color: #FFFFFF;
+}

@@ -1,0 +1,284 @@
+
+/*公共样式结束*/
+/*///////////////////////////*/
+/*独有的样式*/
+/*#top_navs li:nth-child(3){*/
+    /*border-bottom:2px solid #CD1C12;*/
+/*}*/
+/*#top_navs li:nth-child(3) a{*/
+    /*color: #CD1C12;*/
+/*}*/
+/*响应式存在的需要隐藏的元素*/
+#top_menu{
+    /*display: none;*/
+}
+.content_li_pic_special_words3{
+    display: none;
+}
+#top_navs li a img{
+    display: none;
+}
+/*上面的即为响应式存在的需要隐藏的元素*/
+
+/*内容样式开始*/
+#content{
+    width:100%;
+}
+.content_top{
+    width:100%;
+    height:2.23rem;
+    background:url('../images/zhiboyitihuan_top.png') no-repeat;
+    background-size: auto 100%;
+    text-align: center;
+}
+.content_top>img{
+    display: block;
+    padding-top: 0.7rem;
+    margin:0 auto;
+    width:3.9rem;
+    height:auto;
+}
+.content_others{
+    width:100%;
+    /*background:#CD1C12 url('../images/') no-repeat;*/
+    background:#CD1C12;
+    background-size: 100% 100%;
+    /*padding-top: 133px;*/
+    padding-top: 0.8rem;
+    /*height:5.77rem;*/
+}
+.content_others>p{
+    font-size: 0.36rem;
+    line-height: 0.5rem;
+    color: #FFFFFF;
+    /*margin-bottom: 47px;*/
+    margin-bottom: 0.31rem;
+    text-align: center;
+}
+.content_others>span{
+    display: block;
+    width:5.66rem;
+    line-height: 0.4rem;
+    /*font-size: 20px;*/
+    font-size: 0.28rem;
+    color: #FFFFFF;
+    /*margin-bottom: 125px;*/
+    text-align: center;
+    margin:0 auto 0;
+}
+.tech_lis{
+    color: #FFF;
+    width:5.35rem;
+    height:4.94rem;
+    /*padding-left: 10%;*/
+    overflow: hidden;
+    padding: 1.24rem 0.96rem 0 1.19rem;
+    position: relative;
+}
+.tech_lis>li{
+    position: absolute;
+    text-align: center;
+}
+.tech_lis>li:nth-child(1){
+    left:1.28rem;
+    top:1.24rem;
+    width:1.92rem;
+}
+.tech_lis>li:nth-child(2){
+     left:3.9rem;
+     top:1.24rem;
+     width:2.64rem;
+ }
+.tech_lis>li:nth-child(3){
+    left:1.19rem;
+    top:3.84rem;
+    width:2.39rem;
+}
+.tech_lis>li:nth-child(4){
+    left:4.16rem;
+    top:3.84rem;
+    width:2.38rem;
+}
+.SOFT_log{
+    position: absolute;
+    width:1.35rem;
+    height:1.1rem;
+    left:-0.31rem;
+    top:-0.36rem;
+}
+.HARD_log{
+    position: absolute;
+    left:-0.01rem;
+    top:0.04rem;
+    width:1.33rem;
+    height:0.6rem;
+}
+.V-PF_log{
+    position: absolute;
+    left:0.2rem;
+    top:-0.5rem;
+    width:0.773rem;
+    height:1.417rem;
+}
+.SAAS_log{
+    position: absolute;
+    left:-0.29rem;
+    top:-0.20rem;
+    width:1.432rem;
+    height:0.963rem;
+}
+.tech_lis>li:last-child{
+    margin-right: 0;
+    width:2.75rem;
+}
+/*.tech_lis li p{*/
+/*font-size: 40px;*/
+/*line-height: 34px;*/
+/*margin-bottom: 62px;*/
+/*}*/
+/*.tech_lis li span{*/
+/*font-size: 24px;*/
+/*line-height: 34px;*/
+/*display: block;*/
+/*color: rgba(255, 255, 255, 0.8);*/
+/*}*/
+/*.tech_lis li em{*/
+/*font-size:18px;*/
+/*line-height: 34px;*/
+/*display: block;*/
+/*color: rgba(255, 255, 255, 0.8);*/
+/*}*/
+.tech_lis li p{
+    font-size: 0.4rem;
+    line-height: 0.34rem;
+    margin-bottom: 0.62rem;
+}
+.tech_lis li span{
+    font-size: 0.24rem;
+    line-height: 0.34rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+}
+.tech_lis li em{
+    font-size:0.18rem;
+    line-height: 0.34rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.broadcasting_integrated_lis{
+    width:100%;
+    padding:0.81rem 0 0.83rem;
+}
+.broadcasting_integrated_lis>li{
+    width:100%;
+}
+.broadcasting_integrated_lis>li>div{
+    width:5.66rem;
+}
+.broadcasting_integrated_li_bg{
+    width:9.4rem;
+    /*padding-top: 1.44rem;*/
+    /*!*padding-left: 1.6rem;*!*/
+    /*padding-left: 1.58rem;*/
+    padding-top: 0.74rem;
+    padding-left: 0.92rem;
+    /*height:4.6rem;*/
+    /*background: #ccc url("../images/zhiboyitihua1.png") no-repeat;*/
+    /*background-size:auto 100%;*/
+}
+.broadcasting_integrated_li_bg1{
+    padding-top: 0;
+}
+.broadcasting_integrated_li_bg:nth-child(2){
+    /*background: #ccc url("../images/zhiboyitihua2.png") no-repeat;*/
+    /*background-size:auto 100%;*/
+}
+.broadcasting_integrated_li_bg:nth-child(3){
+    background: #ccc url("../images/zhiboyitihua3.png") no-repeat;
+    background-size:100% 100%;
+}
+.broadcasting_integrated_li_bg>p{
+    font-size: 0.36rem;
+    line-height: 0.5rem;
+    height:0.5rem;
+    color: #2D2D2D;
+    margin-bottom: 0.401rem;
+}
+.broadcasting_integrated_li_bg>p>span{
+    float: left;
+    width:2px;
+    height:0.32rem;
+    margin-top: 0.09rem;
+    margin-right: 0.223rem;
+    background-color: #D0021B;
+}
+.broadcasting_integrated_li_bg>span{
+    display: block;
+    color:#4A4A4A;
+    font-size: 0.2rem;
+    line-height:0.3rem;
+}
+.broadcasting_integrated_li_bg>span>em{
+    display: block;
+    color:#4A4A4A;
+    font-size: 0.2rem;
+    line-height:0.3rem;
+    margin-bottom: 0.06rem;
+}
+.broadcasting_integrated_li_bg2>span>em{
+    display: inline;
+}
+.broadcasting_integrated_li_nobg{
+    /*width:6.95rem;*/
+    /*padding-top: 1.44rem;*/
+    /*padding-left: 1.25rem;*/
+    /*height:3.36rem;*/
+    /*background-color: #FFF;*/
+
+    width:9.4rem;
+    padding-top: 0.74rem;
+    padding-left: 0.92rem;
+    /*height:4.6rem;*/
+    /*margin-top: -2.5rem;*/
+}
+.broadcasting_integrated_li_nobg>p{
+    font-size: 0.36rem;
+    line-height: 0.5rem;
+    height:0.5rem;
+    color: #2D2D2D;
+    margin-bottom: 0.401rem;
+}
+.broadcasting_integrated_li_nobg>p>span{
+    float: left;
+    width:2px;
+    height:0.32rem;
+    margin-top: 0.09rem;
+    margin-right: 0.223rem;
+    background-color: #D0021B;
+}
+.broadcasting_integrated_li_nobg>span{
+    display: block;
+    color:#4A4A4A;
+    font-size: 0.2rem;
+    line-height:0.3rem;
+}
+.broadcasting_integrated_li_nobg>span>em{
+    display: inline;
+    color:#4A4A4A;
+    font-size: 0.2rem;
+    line-height:0.3rem;
+    margin-bottom: 0.06rem;
+}
+.broadcasting_integrated_li_nobg>span>em:last-child{
+    margin-bottom: 0;
+}
+.broadcasting_integrated_li_nobg2{
+    padding-left: 0.92rem;
+    /*position: absolute;*/
+    /*left:0.5rem;*/
+    /*top:5rem;*/
+}
+.broadcasting_integrated_li_bg2{
+    padding-left: 0.92rem;
+}

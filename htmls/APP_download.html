@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APP下载</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <link rel="shortcut icon" href="../images/logo_top.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:750px)" href="../css/samestyle_pc.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:750px)" href="../css/samestyle_not_PC.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:750px)" href="../css/index_APP_download.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:750px)" href="../css/index_APP_download_not_PC.css">
+    <script src="../js/jq.js"></script>
+    <script>
+        /*非移动端*/
+        if (document.documentElement.clientWidth>=750){
+            window.onready=function () {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+            }
+            /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';*/
+            window.onresize = function(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+            }
+        }else/* 750一下的移动端*/
+        {
+            window.onready=function () {
+                $('a.bottom_xlwb>span').html('微博');
+                $('.bottom_wx>span').html('微信');
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';
+            }
+            /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';*/
+            window.onresize = function(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';
+            }
+        }
+
+        /*对浏览器窗口监听，设置基本字号*/
+        /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+         window.onresize = function(){
+         document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+         }*/
+
+
+        /*6.4是根据设计稿640px/100的来的，
+         实时当前屏幕除以6.4后，
+         全局元素尺寸就按1rem就等于100px来设计
+         实时当前屏幕除以6.4后 < 50 表示是最小屏幕320px
+         */
+        /*PC端这里用的是1920宽的设计稿 1920/100=19.2 移动端用的是750的设计稿*/
+        /*console.log(document.documentElement.style.fontSize);*/
+    </script>
+</head>
+<body>
+<div id="top">
+    <div id="top_content">
+        <div id="top_logo">
+            <img src="../images/logo.png" alt="logo">
+            <img class="logo_tmgc" src="../images/logo_tmgc.png" alt="透明工场">
+        </div>
+        <ul id="top_navs">
+            <li><a href="../index.html">首页<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="transparent_factory.html">透明工场<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="broadcasting_integrated.html">直播一体化<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="APP_download.html">APP下载<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="partner_about.html">合作伙伴<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <!--<li><a href="htmls/download_page.html">APP下载<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>-->
+            <!--<li><a href="htmls/about_us.html">关于我们<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>-->
+        </ul>
+        <div id="top_menu">
+            <img src="../images/000000.png" alt="menu">
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div class="content_top">
+        <img class="transparentpg_topbg" src="../images/最真实的制造过程.png" alt="最真实的制造过程">
+    </div>
+    <div class="content_others">
+        <img class="APP_down" src="../images/Android_IOS_download.png" alt="透明工场">
+        <div class="transparent_download">
+            <div class="ios_down">
+                <!--<img src="../images/IOS_download.png" alt="透明工场">-->
+                <div>
+                    <!--<img src="../images/苹果.png" alt="苹果"><span>iOS端下载</span>-->
+                </div>
+            </div>
+            <div class="anzhuo_down">
+                <!--<img src="../images/安卓下载.png" alt="透明工场">-->
+                <div>
+                    <!--<img src="../images/安卓.png" alt="安卓"><span>安卓端下载</span>-->
+                </div>
+            </div>
+        </div>
+        <div id="transparent_show">
+            <p><span></span>透明工场</p>
+            <span>在《透明工场》，我们可以看到所有与生活息息相关的产品，是如何通过人类智慧生产出来的，同时见证生产者的初心与现状；在未来，我们将逐步实现所有生产线的直播形态，从而达到“所见即所得”的商品售卖新途径。</span>
+        </div>
+    </div>
+    <ul id="APP_about_videos">
+        <li>
+            <div>
+                <img src="../images/播放btn.png" alt="播放">
+                <p>《下雨天最好的装饰品》</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="../images/播放btn.png" alt="播放">
+                <p>《键盘时代的书写情怀》</p>
+            </div>
+        </li>
+    </ul>
+</div>
+<div id="bottom">
+    <div id="bottom_content">
+        <div id="friendly_link">
+            <p>友情链接</p>
+            <ul>
+                <li><a href="http://www.cca.org.cn/" target="_blank"><img src="../images/消协.png" alt="中国消费者协会"></a></li>
+                <li><a href="http://www.aqsiq.gov.cn/" target="_blank"><img src="../images/质监总局.png" alt="国家质量监督检验检疫总局"></a></li>
+                <li><a href="http://www.miit.gov.cn/" target="_blank"><img src="../images/工业和信息化部.png" alt="中华人民共和国工业和信息化部"></a></li>
+            </ul>
+        </div>
+        <div id="bottom_tmgz">
+            <p>联系我们</p>
+            <div class="bottom_tmgz_abouts">
+                市场合作：<span>sales@openfactory.tv</span><br>
+                加入我们：<span>hr@openfactory.tv</span>
+            </div>
+        </div>
+        <div id="connect_us">
+            <a class="bottom_xlwb" href="http://weibo.com/p/1006066033277387/home?from=page_100606&mod=TAB#place" target="_blank"><img src="../images/微博%20(1).png" alt="新浪微博"><span>新浪微博</span></a>
+            <div class="bottom_wx"><img src="../images/微信公众号二维码.png" alt="微信公众号"><br><span>微信公众号</span></div>
+        </div>
+    </div>
+    <div id="bottom_others">
+        <span>北京市东城区新中西里13号巨石大厦6A1</span>
+        <span>京ICP备16021774号-3</span>
+    </div>
+</div>
+<div class="video_show_bg" style="display: none; position: fixed;left: 0;top: 0;background-color: #FFFFFF;">
+    <div class="videos_box_position" style="position: absolute;left: 0;top: 0;background-color: #FFFFFF; width: 100%; height: 100%;">
+        <div class="videos_box" style="position: absolute;left: 0;top: 0;height: 100%;width: 100%;max-width: 1280px;margin:0 auto;">
+            <video class="video1" style="display: none;" src="http://ohfua2f3p.bkt.clouddn.com/56.mp4" width="100%" height="auto"  controls="controls"></video>
+            <video class="video2" style="display: none;" src="http://ohfua2f3p.bkt.clouddn.com/51.mp4" width="100%" height="auto"  controls="controls"></video>
+        </div>
+    </div>
+    <div class="close_video_btn">
+        <img src="../images/关闭btn.png" alt="关闭视频">
+    </div>
+</div>
+</body>
+<script>
+    $('#top_menu').on('click',function () {
+        $('#top_navs').toggle(300);
+    })
+    $(function () {
+        var windowHeight=$(window).height();
+        var windowWidth=$(window).width();
+//        console.log(windowHeight+'dafaw'+windowWidth);
+        $('.video_show_bg').width(windowWidth);
+        $('.video_show_bg').height(windowHeight);
+//        var videoW=windowWidth;
+//        if (videoW>=1280){
+//            videoW=1280;
+//            $('.video_show_bg .videos_box').width(videoW);
+//        }else {
+//            $('.video_show_bg .videos_box').width(videoW);
+//        }
+//        $('.video_show_bg video').width(windowWidth);
+
+//        第一个视频
+        $('#APP_about_videos>li:first-child>div>img').click(function () {
+            $('.video_show_bg').show();
+//            $('.videos_box').css('margin','0 auto');
+            $('.video_show_bg>.videos_box_position>.videos_box>.video1').show();
+            var videoHeight=$('.video_show_bg>.videos_box_position>.videos_box>.video1').height();
+            var videoWidth=$('.video_show_bg>.videos_box_position>.videos_box>.video1').width();
+            $('.video_show_bg>.videos_box_position>.videos_box').css('top',(windowHeight-videoHeight)/2);
+            $('.video_show_bg>.videos_box_position>.videos_box').css('left',(windowWidth-videoWidth)/2);
+            document.getElementsByClassName('video1')[0].play();
+
+        })
+//        第二个视频
+        $('#APP_about_videos>li:nth-child(2)>div>img').click(function () {
+            $('.video_show_bg').show();
+//            $('.videos_box').css('margin','0 auto');
+            $('.video_show_bg>.videos_box_position>.videos_box>.video2').show();
+            var videoHeight=$('.video_show_bg>.videos_box_position>.videos_box>.video2').height();
+            var videoWidth=$('.video_show_bg>.videos_box_position>.videos_box>.video2').width();
+            $('.video_show_bg>.videos_box_position>.videos_box>.video2').css('top',(windowHeight-videoHeight)/2);
+            $('.video_show_bg>.videos_box_position>.videos_box>.video2').css('left',(windowWidth-videoWidth)/2);
+            document.getElementsByClassName('video2')[0].play();
+
+        })
+//        关闭视频
+        $('.close_video_btn').click(function () {
+            $('.video_show_bg').hide();
+            document.getElementsByClassName('video1')[0].pause();
+            document.getElementsByClassName('video2')[0].pause();
+            document.getElementsByClassName('video1')[0].currentTime = 0;
+            document.getElementsByClassName('video2')[0].currentTime = 0;
+            $('.video_show_bg>.videos_box_position>.videos_box>.video1').hide();
+            $('.video_show_bg>.videos_box_position>.videos_box>.video2').hide();
+        })
+
+    })
+</script>
+</html>

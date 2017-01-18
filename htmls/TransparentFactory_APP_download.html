@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>透明工场APP下载</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+
+    <link rel="shortcut icon" href="http://jushizhibo.com/images/logo_top.png">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+            /*color: red;*/
+        }
+        div.wx_warn{
+            width:100%;
+            height:100%;
+            background-color: rgba(0,0,0,0.4);
+            font-size: 10px;
+            position: relative;
+        }
+        .wx_IOS_tips{
+            line-height:30px;
+            position: absolute;
+            left:5px;
+            top:50%;
+            margin-top: -15px;
+            display: none;
+        }
+        .wx_Android_tips{
+            line-height:30px;
+            position: absolute;
+            left:5px;
+            top:50%;
+            margin-top: -15px;
+            display: none;
+        }
+        .wx_IOS_tips,.wx_Android_tips{
+            overflow: hidden;
+            background-color: rgba(255,255,255,0.5);
+            margin:0 5px 0;
+            padding-left: 5px;
+        }
+        .wx_IOS_tips img,.wx_IOS_tips span, .wx_Android_tips img, .wx_Android_tips span{
+            float: left;
+        }
+        .wx_IOS_tips img{
+            height:20px;
+            width:auto;
+            margin-top: 5px;
+        }
+
+        .wx_Android_tips img{
+            height:30px;
+            width:auto;
+        }
+    </style>
+</head>
+<body>
+	<div class="wx_warn">
+        <div class="wx_IOS_tips">
+            <span>请点击右上角的&nbsp;</span><img src="../images/IOS_wx.png" alt=""><span>&nbsp;，选择“在浏览器打开”，</span><span>再下载“透明工场”APP。</span>
+        </div>
+        <div class="wx_Android_tips">
+            <span>请点击右上角的&nbsp;</span><img src="../images/android_wx.png" alt=""><span>&nbsp;，选择“在浏览器打开”，</span><span>再下载“透明工场”APP。</span>
+        </div>
+    </div>
+<script>
+	var browser = {
+          versions: function () {
+             var u = navigator.userAgent, app = navigator.appVersion;
+             return {     //移动终端浏览器版本信息
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+           };
+         }(),
+         language: (navigator.browserLanguage || navigator.language).toLowerCase()
+       }            
+
+if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
+    var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            //在微信中打开
+            document.getElementsByClassName('wx_IOS_tips')[0].style.display='block';
+			/*alert('请点击右上角的。。。选择在本地浏览器中打开');*/
+          
+    }else if(browser.versions.android){
+            //是否在安卓浏览器打开
+            window.location="http://jushizhibo.com/android/app-release.apk"
+
+    }
+	else if(browser.versions.ios){
+            //是否在IOS浏览器打开
+			alert('IOS版本暂未上线，敬请期待');
+            /*下边的这个跳转正常。*/
+            /*window.location="http://www.baidu.com"*/
+
+            /*下边的跳转打开APP 在IOS版QQ浏览器没反应。应用上线后。注意测试*/
+            /*window.location="transparentfactory://";*/
+    }
+} else {
+    //否则就是PC浏览器打开
+	  alert('请在移动设备上打开');
+}
+
+/*不识别  命令isEmptyObject*/
+ /*if (isEmptyObject(browser)) {
+      b.style.display="none";
+
+      alert('浏览器信息为空');
+ } */
+</script>
+</body>
+</html>

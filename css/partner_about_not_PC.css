@@ -1,0 +1,147 @@
+
+/*公共样式结束*/
+/*///////////////////////////*/
+/*独有的样式*/
+#top_navs li:nth-child(5){
+    /*border-bottom:2px solid #CD1C12;*/
+}
+#top_navs li:nth-child(5) a{
+    /*color: #CD1C12;*/
+}
+/*响应式存在的需要隐藏的元素*/
+#top_menu{
+    /*display: none;*/
+}
+.content_li_pic_special_words3{
+    display: none;
+}
+#top_navs li a img{
+    display: none;
+}
+
+/*上面的即为响应式存在的需要隐藏的元素*/
+
+/*内容样式开始*/
+#content{
+    width:100%;
+}
+.content_top{
+    width:100%;
+    height:2.23rem;
+    background:url('../images/partner_top.png') center center no-repeat;
+    background-size: auto 100%;
+    text-align: center;
+}
+.content_top>img{
+    display: block;
+    padding-top: 0.33rem;
+    margin:0 auto;
+
+    width:2.76rem;
+    height:auto;
+}
+.content_others{
+    width:100%;
+    height:12rem;
+    /*background:#ccc url("../images/partner_bottom.png") no-repeat;*/
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.partner_words {
+    color: #FFF;
+    width: 100%;
+    height: 4rem;
+    background: url("../images/mobile_partner_top.png") no-repeat;
+    padding-top: 0.8rem;
+}
+.partner_words>p{
+    font-size: 0.36rem;
+    position: relative;
+    height:0.5rem;
+    line-height: 0.5rem;
+    padding-left: 0.19rem;
+    margin-bottom: 0.31rem;
+    margin-left: 0.92rem;
+}
+.partner_words>p>span{
+    position: absolute;
+    left:0;
+    /*top:9px;*/
+    top:0.09rem;
+    display: block;
+    width:2px;
+    height:0.32rem;
+    background-color: #FFF;
+}
+.partner_words>div{
+    /*width:2.8rem;*/
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    padding:0 0.92rem;
+}
+.partner_links{
+    width:100%;
+    height:7.51rem;
+    position: absolute;
+    left:0;
+    top:4.5rem;
+    background: url("../images/mobile_partner_bottom.png") no-repeat;
+    background-size: 100% auto;
+}
+.partner_links a{
+    position: absolute;
+}
+.partner_links a img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.partner_links_sl{
+    left:0.71rem;
+    top:1.315rem;
+    width:1.318rem;
+    height:1.301rem;
+}
+.partner_links_qjd{
+    left:2.82rem;
+    top:1.32rem;
+    width:1.59rem;
+    height:1.362rem;
+}
+.partner_links_tsl{
+    left:5.2rem;
+    top:1.31rem;
+    width:1.397rem;
+    height:1.345rem;
+}
+.partner_links_ylyy{
+    left:1.37rem;
+    top:3.31rem;
+    width:1.755rem;
+    height:1.328rem;
+}
+.partner_links_zd{
+    left:3.82rem;
+    top:3.57rem;
+    width:2.443rem;
+    /*height:0.8rem;*/
+}
+.partner_links_gzgs{
+    left:0.51rem;
+    top:4.99rem;
+    width:2.4rem;
+    height:1.3rem;
+}
+.partner_links_slhs{
+    left:3.14rem;
+    top:5.29rem;
+    width:1.687rem;
+    height:0.686rem;
+}
+.partner_links_dls{
+    left:5.44rem;
+    top:5.21rem;
+    width:1.16rem;
+    height:1.072rem;
+}

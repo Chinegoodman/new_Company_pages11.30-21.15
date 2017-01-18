@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>北京通盈九维科技有限公司</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <!--添加网站关键字、网站描述、机器人向导和作者-->
+    <meta name="keywords" content="透明_通盈_工场_透明工场_数字营销_PEOP_直播">
+    <meta name="description" content="北京通盈九维咨询公司创建于2015年，是第一个专门致力于用互联网手段改造传统企业的公司。精通中国传统企业运作模式、熟悉操作多样技术手段改造业务流程。">
+
+    <link rel="shortcut icon" href="images/logo_top.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:750px)" href="css/samestyle_pc.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:750px)" href="css/samestyle_not_PC.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:750px)" href="css/index.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:750px)" href="css/index_not_pc.css">
+    <link rel="stylesheet" href="swiper/swiper-3.3.1.min.css">
+    <script src="js/jq.js"></script>
+    <script src="swiper/swiper-3.3.1.min.js"></script>
+    <script>
+        /*非移动端*/
+        if (document.documentElement.clientWidth>=750){
+            window.onready=function () {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+            }
+            /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';*/
+            window.onresize = function(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+            }
+        }else/* 750一下的移动端*/
+        {
+            window.onready=function () {
+                $('a.bottom_xlwb>span').html('微博');
+                $('.bottom_wx>span').html('微信');
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';
+            }
+            $(window).on('touchstart', function(){
+                var video=document.getElementsByTagName('video')[1];
+                video.play();
+            })
+            /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';*/
+            window.onresize = function(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';
+            }
+        }
+
+        /*对浏览器窗口监听，设置基本字号*/
+        /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+        window.onresize = function(){
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+        }*/
+
+
+        /*6.4是根据设计稿640px/100的来的，
+         实时当前屏幕除以6.4后，
+         全局元素尺寸就按1rem就等于100px来设计
+         实时当前屏幕除以6.4后 < 50 表示是最小屏幕320px
+         */
+        /*PC端这里用的是1920宽的设计稿 1920/100=19.2 移动端用的是750的设计稿*/
+        /*console.log(document.documentElement.style.fontSize);*/
+    </script>
+
+    <style>
+        .swiper-pagination-bullet-active{
+            background-color:#FFF;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div id="top_content">
+            <div id="top_logo">
+                <img src="images/index_toplogo.png" alt="logo">
+                <img class="logo_tmgc" src="images/logo_tmgc.png" alt="透明工场">
+            </div>
+            <ul id="top_navs">
+                <li><a href="index.html">首页<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+                <li><a href="htmls/transparent_factory.html">透明工场<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+                <li><a href="htmls/broadcasting_integrated.html">直播一体化<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+                <li><a href="htmls/APP_download.html">APP下载<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+                <li><a href="htmls/partner_about.html">合作伙伴<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+                <!--<li><a href="htmls/download_page.html">APP下载<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>-->
+                <!--<li><a href="htmls/about_us.html">关于我们<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>-->
+            </ul>
+            <div id="top_menu">
+                <img src="images/000000.png" alt="menu">
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="content_top">
+            <!--<img src="images/互联网+升级.png" alt="互联网+升级">-->
+            <video  webkit-playsinline="true" class="video_no_words" src="viedes/index_top.mp4" width="100%" height="auto" autoplay loop></video>
+            <video  webkit-playsinline="true" class="video_have_words" src="viedes/havewords_index_top.mp4" width="100%" height="auto" autoplay loop></video>
+            <img class="video_words" src="images/index_透明工场看见安心.png" alt="透明工场，看见安心">
+        </div>
+    </div>
+
+    <div class="swiper-container index_sp_container" style="height:4.8rem;">
+        <div class="swiper-wrapper index_wrapper">
+
+            <div class="swiper-slide index_slide1">
+                <div>
+                    <div class="index_sp_left index_sp_left1">
+                        <p>透明工场</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide index_slide2">
+                <div>
+                    <div class="index_sp_left index_sp_left2">
+                        <p>直播一体化</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide index_slide3">
+                <div>
+                    <div class="index_sp_left index_sp_left3">
+                        <p>APP下载</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 如果需要导航按钮 -->
+            <!--<div class="swiper-button-prev"></div>-->
+            <!--<div class="swiper-button-next"></div>-->
+
+            <!-- 如果需要滚动条 -->
+            <!--<div class="swiper-scrollbar"></div>-->
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div id="bottom">
+        <div id="bottom_content">
+            <div id="friendly_link">
+                <p>友情链接</p>
+                <ul>
+                    <li class="bottom_zj"><a href="http://www.aqsiq.gov.cn/" target="_blank"><img src="images/bottom_zj.png" alt="国家质量监督检验检疫总局"></a></li>
+                    <li class="bottom_ly"><a href="http://www.cnta.gov.cn/" target="_blank"><img src="images/bottom_ly.png" alt="中华人民共和国国家旅游局"></a></li>
+                    <li class="bottom_gx"><a href="http://www.miit.gov.cn/" target="_blank"><img src="images/bottom_gx.png" alt="中华人民共和国工业和信息化部"></a></li>
+                    <li class="bottom_xx"><a href="http://www.cca.org.cn/" target="_blank"><img src="images/bottom_xx.png" alt="中国消费者协会"></a></li>
+                </ul>
+            </div>
+            <div id="bottom_tmgz">
+                <!--<img id="bottom_tmgz_logo"src="images/logo.png" alt="logo">
+                <img class="logo_tmgc" src="images/logo_tmgc.png" alt="透明工场">
+                <ul id="bottom_tmgz_abouts"style="display: none;">
+                    <li><a href="">合作伙伴</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">加入我们</a></li>
+                </ul>-->
+                <p>联系我们</p>
+                <div class="bottom_tmgz_abouts">
+                    市场合作：<span>sales@openfactory.tv</span><br>
+                    加入我们：<span>hr@openfactory.tv</span>
+                </div>
+            </div>
+            <div id="connect_us">
+                <a class="bottom_xlwb" href="http://weibo.com/p/1006066033277387/home?from=page_100606&mod=TAB#place" target="_blank"><img src="images/微博%20(1).png" alt="新浪微博"><span>新浪微博</span></a>
+                <div class="bottom_wx"><img src="images/微信公众号二维码.png" alt="微信公众号"><br><span>微信公众号</span></div>
+            </div>
+        </div>
+        <div id="bottom_others">
+            <span>北京市东城区新中西里13号巨石大厦6A1</span>
+            <span>京ICP备16021774号-3</span>
+        </div>
+    </div>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            paginationClickable: true,
+            autoplay: 4000,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+//        分页器点击跳转
+//            paginationClickable:'true',
+            // 如果需要前进后退按钮
+//        nextButton: '.swiper-button-next',
+//        prevButton: '.swiper-button-prev',
+//            阻止滑动是的a跳转
+//        preventClicks : false,
+            // 如果需要滚动条
+//        scrollbar: '.swiper-scrollbar',
+            onSlideChangeEnd:function (swiper) {
+                /*var swiper_num=swiper.activeIndex;
+                /!*if (swiper_num>=4){
+                    swiper_num=1;
+                }*!/
+                console.log(swiper_num);*/
+                $('.index_sp_left').eq(swiper.activeIndex).addClass('sp_left_ready');
+                /*console.log(swiper_num);*/
+
+            },
+            onTransitionStart: function(swiper){
+                $('.index_sp_left').eq(swiper.activeIndex).removeClass('sp_left_ready');
+            }
+        })
+        $('.index_slide1').click(function () {
+            window.open('htmls/transparent_factory.html','_self');
+        })
+        $('.index_slide2').click(function () {
+            window.open('htmls/broadcasting_integrated.html','_self');
+        })
+        $('.index_slide3').click(function () {
+            window.open('htmls/APP_download.html','_self');
+        })
+    </script>
+</body>
+<script>
+    $('#top_menu').on('click',function () {
+        $('#top_navs').toggle(300);
+    })
+</script>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>直播一体化</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+
+    <link rel="shortcut icon" href="../images/logo_top.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:750px)" href="../css/samestyle_pc.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:750px)" href="../css/samestyle_not_PC.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:750px)" href="../css/broadcasting_integrated.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:750px)" href="../css/broadcasting_integrated_not_PC.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:425px)" href="../css/broadcasting_integrated_iphone5.css">
+    <script src="../js/jq.js"></script>
+    <script>
+        /*非移动端*/
+        if (document.documentElement.clientWidth>=750){
+            window.onready=function () {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+            }
+            /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';*/
+            window.onresize = function(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+            }
+        }else/* 750一下的移动端*/
+        {
+            window.onready=function () {
+                $('a.bottom_xlwb>span').html('微博');
+                $('.bottom_wx>span').html('微信');
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';
+            }
+            /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';*/
+            window.onresize = function(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';
+            }
+        }
+
+        /*对浏览器窗口监听，设置基本字号*/
+        /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+         window.onresize = function(){
+         document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+         }*/
+
+
+        /*6.4是根据设计稿640px/100的来的，
+         实时当前屏幕除以6.4后，
+         全局元素尺寸就按1rem就等于100px来设计
+         实时当前屏幕除以6.4后 < 50 表示是最小屏幕320px
+         */
+        /*PC端这里用的是1920宽的设计稿 1920/100=19.2 移动端用的是750的设计稿*/
+        /*console.log(document.documentElement.style.fontSize);*/
+    </script>
+</head>
+<body>
+<div id="top">
+    <div id="top_content">
+        <div id="top_logo">
+            <img src="../images/logo.png" alt="logo">
+            <img class="logo_tmgc" src="../images/logo_tmgc.png" alt="透明工场">
+        </div>
+        <ul id="top_navs">
+            <li><a href="../index.html">首页<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="transparent_factory.html">透明工场<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="broadcasting_integrated.html">直播一体化<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="APP_download.html">APP下载<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="partner_about.html">合作伙伴<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <!--<li><a href="htmls/download_page.html">APP下载<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>-->
+            <!--<li><a href="htmls/about_us.html">关于我们<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>-->
+        </ul>
+        <div id="top_menu">
+            <img src="../images/000000.png" alt="menu">
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <div class="content_top">
+        <img class="transparentpg_topbg" src="../images/助力企业营销.png" alt="助力企业营销">
+    </div>
+    <div class="content_others">
+        <p>透明工场直播一体化解决方案</p>
+        <span>基于大规模实时流媒体计算集群和强大的音视频信号处理算法为互联网时代直播场景打造的硬件软件组合音视频直播解决方案。</span>
+        <ul class="tech_lis">
+            <li>
+                <p>SOFT</p>
+                <span>自动导播直播系统</span>
+                <em>100%自主专利研发</em>
+                <img class="SOFT_log" src="../images/路由宝.png" alt="">
+            </li>
+            <li>
+                <p>HARD</p>
+                <span>自动导播直播分流录播器</span>
+                <em>远程调控、无人值守</em>
+                <img class="HARD_log" src="../images/录播器.png" alt="">
+            </li>
+            <li>
+                <p>V-PF</p>
+                <span>透明工场APP直播平台</span>
+                <em>满足企业个性化需求</em>
+                <img class="V-PF_log" src="../images/phone_log.png" alt="">
+            </li>
+            <li>
+                <p>SAAS</p>
+                <span>云存储服务器</span>
+                <em>流量可根据企业需求自行选购</em>
+                <img class="SAAS_log" src="../images/云端.png" alt="">
+            </li>
+        </ul>
+
+    </div>
+    <ul class="broadcasting_integrated_lis">
+        <li>
+            <div class="broadcasting_integrated_li_bg broadcasting_integrated_li_bg1">
+                <p><span></span>操作简单，安全稳定</p>
+                <span>
+                    <em>无需安装复杂插件，随时随地可观看视频直播</em>
+                    <em>直播时还能实现多机位节目的实时导播</em>
+                   <em>7*24小时无间断直播，支持无人值守及远程管理</em>
+                </span>
+            </div>
+            <div class="broadcasting_integrated_li_nobg">
+                <p><span></span>直播同时完成后期制作</p>
+                <span>
+                    <em>直播过程中系统可自行完成后期处理</em>
+                    <em>如：字幕添加、特效制作等功能</em>
+                    <em>直播时多机位节目的实时导播</em>
+                </span>
+            </div>
+        </li>
+
+        <li>
+            <div class="broadcasting_integrated_li_nobg broadcasting_integrated_li_nobg2">
+                <p><span></span>可支持多种硬件设备发起直播</p>
+                <span>
+                    <em>监控摄像头、手机、电脑、无人机、VR设备</em>
+                    <em>跨平台接入，随时随地可观看视频直播</em>
+                </span>
+            </div>
+            <div class="broadcasting_integrated_li_bg broadcasting_integrated_li_bg2">
+                <p><span></span>支持非常规拍摄</p>
+                <span>
+                    <em>100%自主研发，可直接接入专业摄像机、搭配天文望远</em>
+                    <em>镜、显微镜等专业设备进行非常规记录</em>
+                </span>
+            </div>
+        </li>
+
+
+        <li>
+            <div class="broadcasting_integrated_li_bg broadcasting_integrated_li_bg3">
+                <p><span></span>数据实时监控：</p>
+                <span>
+                    <em>直播活动实时监控和使用情况全面统计分析</em>
+                </span>
+            </div>
+            <div class="broadcasting_integrated_li_nobg">
+                <p><span></span>流量可调控：</p>
+                <span>
+                    <em>普通视频约200Kbps，音频流量30Kbps，可以根据自身</em>
+                    <em>网络条件自适应</em>
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div id="bottom">
+    <div id="bottom_content">
+        <div id="friendly_link">
+            <p>友情链接</p>
+            <ul>
+                <li><a href="http://www.cca.org.cn/" target="_blank"><img src="../images/消协.png" alt="中国消费者协会"></a></li>
+                <li><a href="http://www.aqsiq.gov.cn/" target="_blank"><img src="../images/质监总局.png" alt="国家质量监督检验检疫总局"></a></li>
+                <li><a href="http://www.miit.gov.cn/" target="_blank"><img src="../images/工业和信息化部.png" alt="中华人民共和国工业和信息化部"></a></li>
+            </ul>
+        </div>
+        <div id="bottom_tmgz">
+            <!--<img id="bottom_tmgz_logo"src="images/logo.png" alt="logo">
+            <img class="logo_tmgc" src="images/logo_tmgc.png" alt="透明工场">
+            <ul id="bottom_tmgz_abouts"style="display: none;">
+                <li><a href="">合作伙伴</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">加入我们</a></li>
+            </ul>-->
+            <p>联系我们</p>
+            <div class="bottom_tmgz_abouts">
+                市场合作：<span>sales@openfactory.tv</span><br>
+                加入我们：<span>hr@openfactory.tv</span>
+            </div>
+        </div>
+        <div id="connect_us">
+            <a class="bottom_xlwb" href="http://weibo.com/p/1006066033277387/home?from=page_100606&mod=TAB#place" target="_blank"><img src="../images/微博%20(1).png" alt="新浪微博"><span>新浪微博</span></a>
+            <div class="bottom_wx"><img src="../images/微信公众号二维码.png" alt="微信公众号"><br><span>微信公众号</span></div>
+        </div>
+    </div>
+    <div id="bottom_others">
+        <span>北京市东城区新中西里13号巨石大厦6A1</span>
+        <span>京ICP备16021774号-3</span>
+    </div>
+</div>
+</body>
+<script>
+    $('#top_menu').on('click',function () {
+        $('#top_navs').toggle(300);
+    })
+</script>
+</html>

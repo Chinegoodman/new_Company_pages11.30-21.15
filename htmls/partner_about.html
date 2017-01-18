@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合作伙伴</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+
+    <link rel="shortcut icon" href="../images/logo_top.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:750px)" href="../css/samestyle_pc.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:750px)" href="../css/samestyle_not_PC.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:750px)" href="../css/partner_about.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:750px)" href="../css/partner_about_not_PC.css">
+    <script src="../js/jq.js"></script>
+    <script>
+        /*非移动端*/
+        if (document.documentElement.clientWidth>=750){
+            window.onready=function () {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+            }
+            /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';*/
+            window.onresize = function(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+            }
+        }else/* 750一下的移动端*/
+        {
+            window.onready=function () {
+                $('a.bottom_xlwb>span').html('微博');
+                $('.bottom_wx>span').html('微信');
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';
+            }
+            /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';*/
+            window.onresize = function(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5  < 128/3 ? 128/3 : document.documentElement.clientWidth / 7.5 + 'px';
+            }
+        }
+
+        /*对浏览器窗口监听，设置基本字号*/
+        /*document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+         window.onresize = function(){
+         document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.2  < 50/3 ? 50/3 : document.documentElement.clientWidth / 19.2 + 'px';
+         }*/
+
+
+        /*6.4是根据设计稿640px/100的来的，
+         实时当前屏幕除以6.4后，
+         全局元素尺寸就按1rem就等于100px来设计
+         实时当前屏幕除以6.4后 < 50 表示是最小屏幕320px
+         */
+        /*PC端这里用的是1920宽的设计稿 1920/100=19.2 移动端用的是750的设计稿*/
+        /*console.log(document.documentElement.style.fontSize);*/
+    </script>
+</head>
+<body>
+<div id="top">
+    <div id="top_content">
+        <div id="top_logo">
+            <img src="../images/logo.png" alt="logo">
+            <img class="logo_tmgc" src="../images/logo_tmgc.png" alt="透明工场">
+        </div>
+        <ul id="top_navs">
+            <li><a href="../index.html">首页<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="transparent_factory.html">透明工场<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="broadcasting_integrated.html">直播一体化<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="APP_download.html">APP下载<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <li><a href="partner_about.html">合作伙伴<img src="../images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>
+            <!--<li><a href="htmls/download_page.html">APP下载<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>-->
+            <!--<li><a href="htmls/about_us.html">关于我们<img src="images/Disclosure Indicator Copy + 评论 + 分享.png" alt=""></a></li>-->
+        </ul>
+        <div id="top_menu">
+            <img src="../images/000000.png" alt="menu">
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <div class="content_top">
+        <img class="transparentpg_topbg" src="../images/直面品牌.png" alt="直面品牌 我们说“有温度”的故事">
+    </div>
+    <div class="content_others">
+        <div class="partner_words">
+            <p><span></span>合作伙伴</p>
+            <div>
+                通盈九维保持与多家政企、大中小企业的密切合作关心，通过透明工场的专项栏目，帮助企业完成从传统到互联网的完美转审。秉承互联网+的升级概念，我们更有信心让双方达到互利共赢，共创互联网透明时代的新纪元。
+            </div>
+        </div>
+        <div class="partner_links">
+            <a class="partner_links_sl" onclick="return false" href=""><img src="../images/首旅集团.png" alt="首旅集团"></a>
+            <a class="partner_links_qjd" onclick="return false" href=""><img src="../images/全聚德集团.png" alt="中国全聚德集团"></a>
+            <a class="partner_links_tsl" onclick="return false" href=""><img src="../images/天士力控股集团.png" alt="天士力控股集团"></a>
+            <a class="partner_links_ylyy" onclick="return false" href=""><img src="../images/以岭药业.png" alt="以岭药业"></a>
+            <a class="partner_links_zd" onclick="return false" href=""><img src="../images/正大集团.png" alt="正大集团"></a>
+            <a class="partner_links_gzgs" onclick="return false" href=""><img src="../images/最美高速.png" alt="贵州高速"></a>
+            <a class="partner_links_slhs" onclick="return false" href=""><img src="../images/山里寒舍.png" alt="山里寒舍"></a>
+            <a class="partner_links_dls" onclick="return false" href=""><img src="../images/东来顺.png" alt="东来顺"></a>
+        </div>
+    </div>
+</div>
+
+<div id="bottom">
+    <div id="bottom_content">
+        <div id="friendly_link">
+            <p>友情链接</p>
+            <ul>
+                <li><a href="http://www.cca.org.cn/" target="_blank"><img src="../images/消协.png" alt="中国消费者协会"></a></li>
+                <li><a href="http://www.aqsiq.gov.cn/" target="_blank"><img src="../images/质监总局.png" alt="国家质量监督检验检疫总局"></a></li>
+                <li><a href="http://www.miit.gov.cn/" target="_blank"><img src="../images/工业和信息化部.png" alt="中华人民共和国工业和信息化部"></a></li>
+            </ul>
+        </div>
+        <div id="bottom_tmgz">
+            <!--<img id="bottom_tmgz_logo"src="images/logo.png" alt="logo">
+            <img class="logo_tmgc" src="images/logo_tmgc.png" alt="透明工场">
+            <ul id="bottom_tmgz_abouts"style="display: none;">
+                <li><a href="">合作伙伴</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">加入我们</a></li>
+            </ul>-->
+            <p>联系我们</p>
+            <div class="bottom_tmgz_abouts">
+                市场合作：<span>sales@openfactory.tv</span><br>
+                加入我们：<span>hr@openfactory.tv</span>
+            </div>
+        </div>
+        <div id="connect_us">
+            <a class="bottom_xlwb" href="http://weibo.com/p/1006066033277387/home?from=page_100606&mod=TAB#place" target="_blank"><img src="../images/微博%20(1).png" alt="新浪微博"><span>新浪微博</span></a>
+            <div class="bottom_wx"><img src="../images/微信公众号二维码.png" alt="微信公众号"><br><span>微信公众号</span></div>
+        </div>
+    </div>
+    <div id="bottom_others">
+        <span>北京市东城区新中西里13号巨石大厦6A1</span>
+        <span>京ICP备16021774号-3</span>
+    </div>
+</div>
+</body>
+<script>
+    $('#top_menu').on('click',function () {
+        $('#top_navs').toggle(300);
+    })
+</script>
+</html>
